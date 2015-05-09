@@ -1,0 +1,16 @@
+{
+	"name"       : "spacedmonkey/spacedmonkey",
+	"description": "A WordPress theme for Spacedmonkey",
+	"homepage"   : "https://bitbucket.org/spacedmonkey/spacedmonkey/",
+	"type"       : "wordpress-theme",
+	"license"    : "GPL-2.0+",
+	"authors"    : [
+		{
+			"name"    : "Jonathan Harris",
+			"homepage": "http://www.spacedmonkey.co.uk/"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0"
+	}
+}

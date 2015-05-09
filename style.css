@@ -1,0 +1,220 @@
+/*
+ Theme Name:     Spacedmonkey
+ Theme URI:      http://www.spacedmonkey.co.uk/
+ Description:    Twenty Thirteen Child Theme Spacedmonkey
+ Author:         Jonathan Harris
+ Author URI:     http://www.jonathandavidharris.co.uk/
+ Template:       twentythirteen
+ Version:        8
+*/
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+*,*:after,*:before{
+	text-rendering:optimizeLegibility;
+}
+
+body{
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding-top: 80px;
+    padding-bottom: 20px;
+    word-wrap:break-word;
+    
+}
+body.admin-bar{
+	padding-top: 0px;
+}
+code{
+	white-space:normal;
+}
+h1,h2,h3,h4,h5,h6, .lead{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.genericon {
+    vertical-align: middle;
+}
+
+#masthead{
+	background: #014C8D;
+	border-radius: 0px;
+}
+
+#masthead a{
+	color: #fff;
+}
+#masthead a:hover {
+  color:#ccc;
+}
+
+#masthead a:active {
+  color:#428BCA;
+}
+#masthead .navbar-brand{
+	font-family: "Rancho";
+	font-size: 36px;
+	-webkit-font-smoothing: antialiased;
+	padding-right: 0.7em;
+
+}
+
+#masthead .navbar-toggle:hover, 
+#masthead .navbar-toggle:focus,
+#masthead .navbar-nav>.active>a{
+	background-color: #00305B;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	border-color: #014C8D;
+}
+.navbar-inverse .navbar-toggle {
+	border-color: #ddd;
+}
+.page-header{
+	margin-top: 0px;
+}
+.large-icons{
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+}
+.icon-corner{
+	position: absolute;
+	top: 12px;
+	right: 27px;
+	height: 30px;
+	width: 30px;
+	font-size: 30px;
+}
+   .box{
+	   position: relative;
+	   margin-bottom: 15px;
+   }     
+     object,
+     embed,
+     video,
+     audio,
+     iframe{
+	    max-width: 100%;
+	   /* height: auto !important;
+	    max-height: 290px;*/
+    } 
+	
+	 .wp-video-shortcode,
+   	 .wp-video{
+	    max-width: 100%;
+	    width: 100%;
+	   
+    }
+	
+     img{
+	    max-width: 100%;
+	    height: auto !important;
+	    /*max-height: 290px;*/
+    }
+    .box .entry-title{
+    	margin-right: 45px;
+    	text-overflow: ellipsis;
+    	white-space: nowrap;
+    	overflow: hidden;
+    } 
+   .post-quote{
+	   padding-top: 40px;
+	   padding-bottom: 40px;
+   } 
+   .big-gen{
+	   font-size: 20px;
+	   height: 20px;
+	   width: 20px;
+   }
+   .padding-top{
+	   padding-top: 65px;
+   }
+   .entry-title{
+	   margin-top: 10px;
+	   margin-bottom: 20px;
+   }
+   .triangle-down {
+		width: 0;
+		height: 0;
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 20px solid #d9edf7;
+
+		display: block;
+		margin: -22px 10px 0px;
+	}
+	.sidebar-inner{
+		padding-left: 30px;
+		padding-bottom: 30px;
+		border-left: 1px solid #eeeeee;
+	}
+	div.sharedaddy a.sd-button,
+	a.sd-button > span {
+		-webkit-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		box-sizing: content-box;
+	}
+	.widget-title *{
+		font-weight: normal;
+	}
+	
+	/* Hides navigation links and site footer when infinite scroll is active */
+.infinite-scroll #navigation,
+.infinite-scroll.neverending #footer {
+    display: none;
+}
+/* Shows the footer again in case all posts have been loaded */
+.infinity-end.neverending #footer {
+    display: block;
+}
+.infinite-loader {
+	clear: both;
+}
+/* Elements to hide: post navigation, normal footer. */
+.infinite-scroll .paging-navigation {
+	display: none;
+}
+.infinite-loader{
+	width: 30px;
+	margin: 15px auto;
+}
+.clear{
+	clear: both;
+}
+
+div.jp-relatedposts .jp-relatedposts-headline{
+	display: block;
+	float: none
+}
+div.sharedaddy a.sd-button, a.sd-button > span {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+div.sharedaddy{
+	margin: 0px 0px 10px;
+}
+@media screen and (min-width: 768px) {
+    
+   	
+}
+@media screen and (max-width: 319px) {
+
+	#masthead .site-title{ 	text-overflow: ellipsis;	white-space: nowrap; position: absolute; left: 0px; top: 0px; width: 75%; overflow: hidden; }
+}
+@media screen and (max-width: 991px) {
+   
+	.sidebar-inner{
+		padding-left: 0px;
+		border-left: 0px none;
+	}
+}
+
+@media (min-width: 1199px) {
+  .container{
+	  width: 95%;
+	  max-width: 1920px;
+  }
+}
