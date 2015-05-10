@@ -8,6 +8,16 @@ require get_stylesheet_directory() . '/inc/class.php';
 //require get_stylesheet_directory() . '/inc/nav-social.php';
 //require get_stylesheet_directory() . '/inc/figure.php';
 //require get_stylesheet_directory() . '/inc/comments.php';
+
+
+require_once( get_stylesheet_directory() . '/inc/bootstrap.php' );
+require_once( get_stylesheet_directory() . '/inc/category.php' );
+require_once( get_stylesheet_directory() . '/inc/comments.php' );
+require_once( get_stylesheet_directory() . '/inc/figure.php' );
+require_once( get_stylesheet_directory() . '/inc/nav-social.php' );
+require_once( get_stylesheet_directory() . '/inc/nav.php' );
+require_once( get_stylesheet_directory() . '/inc/twentythirteen.php' );
+
 require get_stylesheet_directory() . '/inc/gallery.php';
 require get_stylesheet_directory() . '/inc/sm_home.php';
 

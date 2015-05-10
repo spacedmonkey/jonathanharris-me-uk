@@ -9,8 +9,11 @@ function spacedmonkey_overide(){
 	
 }
 add_action('after_setup_theme','spacedmonkey_overide');
-
-
+function remove_styles_2(){
+	wp_dequeue_style( 'jetpack-subscriptions' );
+}
+add_action('init','remove_styles_2',20);
+if(!function_exists('twentythirteen_entry_date')){
 function twentythirteen_entry_date( $echo = true ) {
 	if ( has_post_format( array( 'chat', 'status' ) ) )
 		$format_prefix = _x( '%1$s on %2$s', '1: post format name. 2: date', 'twentythirteen' );
@@ -29,7 +32,8 @@ function twentythirteen_entry_date( $echo = true ) {
 
 	return $date;
 }
-
+}
+if(!function_exists('twentythirteen_post_nav')){
 /**
  * Display navigation to next/previous post when applicable.
 *
@@ -85,8 +89,8 @@ function twentythirteen_paging_nav() {
 	</nav><!-- .navigation -->
 	<?php
 }
-
-
+}
+if ( ! function_exists( 'twentythirteen_entry_meta' ) ) :
 function twentythirteen_entry_meta() {
 	global $post;
 	echo '<ul class="list-inline text-muted">';
@@ -138,3 +142,4 @@ function twentythirteen_entry_meta() {
 	}
 	echo "</ul>";
 }
+endif;
