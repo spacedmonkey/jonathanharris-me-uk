@@ -31,6 +31,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<?php wp_body_open(); ?>
 	<div id="page" class="hfeed  site">
 		<header id="masthead" class="site-header navbar navbar-inverse <?php echo ( is_admin_bar_showing() ) ? '' : 'navbar-fixed-top';?>" role="banner">
 			<div class="container">
@@ -44,8 +45,8 @@
 		        	</div>
 					<nav id="navbar" class="navbar-collapse collapse" role="navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav nav-menu' ) ); ?>
-						
-						
+
+
 						<?php if ( has_nav_menu( 'social' ) ) {
 
 							wp_nav_menu(
@@ -63,11 +64,11 @@
 									'fallback_cb'     => '',
 								)
 							);
-						
+
 						} ?>
 					</nav><!-- #navbar -->
 				</div>
 			</header><!-- #masthead -->
-	
+
 			<section id="main" class="site-main container">
 							<div class="row ">
